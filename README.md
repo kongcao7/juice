@@ -1,4 +1,11 @@
 juice
 =====
 
-Sunshine reggae juicy beats 
+Born w/ sunshine reggae juicy beats.
+
+This is a iOS product with following basic stuff:
+
+  * Folder management
+  * 
+
+
