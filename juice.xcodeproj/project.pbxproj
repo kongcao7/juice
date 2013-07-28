@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5543733917A4976F0073D1C9 /* SRBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5543733817A4976F0073D1C9 /* SRBaseVC.m */; };
 		55C1C11117A481290094098A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1C11017A481290094098A /* UIKit.framework */; };
 		55C1C11317A481290094098A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1C11217A481290094098A /* Foundation.framework */; };
 		55C1C11517A481290094098A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1C11417A481290094098A /* CoreGraphics.framework */; };
 		55C1C13B17A481D90094098A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55C1C12F17A481D90094098A /* InfoPlist.strings */; };
-		55C1C13C17A481D90094098A /* juice-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55C1C13117A481D90094098A /* juice-Info.plist */; };
 		55C1C13D17A481D90094098A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C13317A481D90094098A /* main.m */; };
 		55C1C13E17A481D90094098A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C1C13617A481D90094098A /* Default-568h@2x.png */; };
 		55C1C13F17A481D90094098A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C1C13717A481D90094098A /* Default.png */; };
 		55C1C14017A481D90094098A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C1C13817A481D90094098A /* Default@2x.png */; };
 		55C1C14117A481D90094098A /* SRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C1C13A17A481D90094098A /* SRAppDelegate.m */; };
+		BB065FCBDCF04496ACD603C7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07085AAA1788460AA7F6CC2A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07085AAA1788460AA7F6CC2A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5128C477AEE54A589FDCEC02 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = support/cocoapods/Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		5543733717A4976F0073D1C9 /* SRBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBaseVC.h; sourceTree = "<group>"; };
+		5543733817A4976F0073D1C9 /* SRBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBaseVC.m; sourceTree = "<group>"; };
 		55C1C10D17A481290094098A /* juice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = juice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C1C11017A481290094098A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55C1C11217A481290094098A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +48,7 @@
 				55C1C11117A481290094098A /* UIKit.framework in Frameworks */,
 				55C1C11317A481290094098A /* Foundation.framework in Frameworks */,
 				55C1C11517A481290094098A /* CoreGraphics.framework in Frameworks */,
+				BB065FCBDCF04496ACD603C7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +61,7 @@
 				55C1C12D17A481D90094098A /* features */,
 				55C1C10F17A481290094098A /* frameworks */,
 				55C1C10E17A481290094098A /* products */,
+				CDB876A8711B4353BA8AC7C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +88,8 @@
 			children = (
 				55C1C13917A481D90094098A /* SRAppDelegate.h */,
 				55C1C13A17A481D90094098A /* SRAppDelegate.m */,
+				5543733717A4976F0073D1C9 /* SRBaseVC.h */,
+				5543733817A4976F0073D1C9 /* SRBaseVC.m */,
 				55C1C12E17A481D90094098A /* configure */,
 				55C1C13417A481D90094098A /* images */,
 			);
@@ -94,6 +103,7 @@
 				55C1C13117A481D90094098A /* juice-Info.plist */,
 				55C1C13217A481D90094098A /* juice-Prefix.pch */,
 				55C1C13317A481D90094098A /* main.m */,
+				5128C477AEE54A589FDCEC02 /* Pods.xcconfig */,
 			);
 			path = configure;
 			sourceTree = "<group>";
@@ -116,6 +126,14 @@
 			path = launch;
 			sourceTree = "<group>";
 		};
+		CDB876A8711B4353BA8AC7C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07085AAA1788460AA7F6CC2A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55C1C12A17A481290094098A /* Build configuration list for PBXNativeTarget "juice" */;
 			buildPhases = (
+				EC384AED1012448C87B02894 /* Check Pods Manifest.lock */,
 				55C1C10917A481290094098A /* Sources */,
 				55C1C10A17A481290094098A /* Frameworks */,
 				55C1C10B17A481290094098A /* Resources */,
+				D1FDD12C866247FD89183C05 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,7 +189,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C1C13B17A481D90094098A /* InfoPlist.strings in Resources */,
-				55C1C13C17A481D90094098A /* juice-Info.plist in Resources */,
 				55C1C13E17A481D90094098A /* Default-568h@2x.png in Resources */,
 				55C1C13F17A481D90094098A /* Default.png in Resources */,
 				55C1C14017A481D90094098A /* Default@2x.png in Resources */,
@@ -178,6 +197,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D1FDD12C866247FD89183C05 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/support/cocoapods/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC384AED1012448C87B02894 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		55C1C10917A481290094098A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -185,6 +237,7 @@
 			files = (
 				55C1C13D17A481D90094098A /* main.m in Sources */,
 				55C1C14117A481D90094098A /* SRAppDelegate.m in Sources */,
+				5543733917A4976F0073D1C9 /* SRBaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +315,7 @@
 		};
 		55C1C12B17A481290094098A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5128C477AEE54A589FDCEC02 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "features/configure/juice-Prefix.pch";
@@ -273,6 +327,7 @@
 		};
 		55C1C12C17A481290094098A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5128C477AEE54A589FDCEC02 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "features/configure/juice-Prefix.pch";
