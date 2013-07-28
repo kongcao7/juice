@@ -1,0 +1,4 @@
+xcodeproj '../../juice'
+
+pod 'AFNetworking', '~> 1.0'  
+pod 'ObjectiveSugar', '~> 0.5'
